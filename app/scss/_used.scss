@@ -1,0 +1,40 @@
+.used {
+    font-family: $quicksand;
+    &__inner {
+        display: flex;
+        align-items: center;
+        & .used__item:nth-child(1) {
+            color: #fff;
+            background: linear-gradient(229.32deg, #6888ff 12.77%, #5e80ff 73.11%);
+            text-align: right;
+            padding-right: 90px;
+            & .used__item-description{
+                margin-left: auto;
+            }
+        }
+        & .used__item:nth-child(2) {
+            background: linear-gradient(101.48deg, #e9efff 41.56%, #e0e9ff 81.53%);
+            padding-left: 90px;
+            color: #5E80FF;
+        }
+    }
+    &__item {
+        padding: 70px 0;
+        flex-basis: 50%;
+    }
+    &__item-num {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 83px;
+        letter-spacing: 0.03em;
+        margin-top: 24px;
+    }
+    &__item-description {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+        max-width: 260px;
+        
+    }
+}

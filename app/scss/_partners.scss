@@ -1,0 +1,19 @@
+.partners{
+    padding: 58px 0;
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 76px;
+    }
+    &__item{
+        cursor: pointer;
+        
+        & svg path{
+           transition: all .5s ease; 
+        }
+        &:hover svg path{
+            fill: #5982E7;
+        }
+    }
+}

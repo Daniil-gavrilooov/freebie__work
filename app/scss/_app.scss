@@ -1,0 +1,80 @@
+.app {
+    padding: 170px 0;
+    background: #f5f8ff;
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 27px;
+    }
+    &__info {
+        font-family: $roboto;
+        padding-top: 55px;
+    }
+    &__info-overheade {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #3d4f9f;
+        margin-bottom: 27px;
+    }
+    &__info-title {
+        font-family: $quicksand;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
+        color: #3d4f9f;
+        margin-bottom: 27px;
+        & span {
+            font-weight: 500px;
+        }
+    }
+    &__info-text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+        color: #8d96bd;
+        max-width: 413px;
+        margin-bottom: 47px;
+    }
+    &__info-buttons {
+        display: flex;
+        align-items: center;
+        font-family: $quicksand;
+        & .app__info-btn:nth-child(1) {
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 16px;
+            padding: 13px 25px;
+            background: #4c85ff;
+            box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+            color: #fff;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 7px;
+                height: 7px;
+                background-image: url(../images/app__btn-icon.svg);
+                top: 43%;
+                right: 10%;
+            }
+        }
+        & .app__info-btn:nth-child(2) {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            color: #adb4d2;
+            padding: 12px 21px;
+            border: 1px solid #D1D1E4;
+        }
+    }
+    &__img img {
+        max-width: 700px;
+        max-height: 700px;
+        object-fit: cover;
+    }
+}

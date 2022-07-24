@@ -1,0 +1,91 @@
+.about-us {
+    padding-top: 140px;
+    padding-bottom: 170px;
+    &__inner {
+        text-align: center;
+        font-family: $open_sans;
+        padding-top: 30px;
+        position: relative;
+        &::after,
+        &::before,
+        & span {
+            position: absolute;
+            content: "";
+        }
+        &::after {
+            width: 165px;
+            height: 103px;
+            right: 0;
+            top: 33px;
+            background-image: url(../images/clouds__right.svg);
+        }
+        &::before {
+            width: 104px;
+            height: 66px;
+            top: -55px;
+            left: 100px;
+            background-image: url(../images/clouds__top.svg);
+        }
+        & span {
+            width: 165px;
+            height: 90px;
+            left: 0;
+            bottom: 40px;
+            background-image: url(../images/clouds__bottom.svg);
+        }
+    }
+    &__items {
+        margin-top: 92px;
+        display: flex;
+        justify-content: center;
+        gap: 67px;
+        font-family: $open_sans;
+        margin-bottom: 92px;
+    }
+    &__item-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 25px;
+        color: #4074f8;
+        margin-top: 33px;
+        margin-bottom: 25px;
+    }
+    &__item-text {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 19px;
+        color: #adb3cb;
+        max-width: 140px;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    &__buttons-text {
+        font-family: $open_sans;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #adb3cb;
+        padding: 0 32px;
+        position: relative;
+        &::after,
+        &::before{
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 1px;
+            background-color: #DAE4FE;
+            top: 10px;
+        }
+        &::after{
+            right: 0;
+        }
+        &::before{
+            left: 0;
+        }
+    }
+}
