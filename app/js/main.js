@@ -5,3 +5,11 @@ $(function() {
         prevArrow: '<img class="slick-prev" src="images/arrow_prew.svg" alt="">'
     });
 })
+$(function() {
+    $('.coments__slider-inner').slick({
+        dots: true,
+        arrows: false,
+        slideToShow: 2,
+        slideToScroll: 1,   
+    });
+})
