@@ -7,7 +7,7 @@
         justify-content: center;
         // gap: 132px;
     }
-    &__info{
+    &__info {
         max-width: 333px;
         margin-left: auto;
     }
@@ -45,6 +45,8 @@
     &__slider-item {
         padding: 50px 70px;
         background: #fff;
+        border: 1px solid #d8e3fe;
+        box-shadow: 0px 5px 50px #f3f5fa;
         max-width: 423px;
         margin: 0 32px;
         margin-bottom: 78px;
@@ -58,9 +60,9 @@
         color: #676f95;
         max-width: 283px;
         position: relative;
-        &::after{
+        &::after {
             position: absolute;
-            content: '';
+            content: "";
             width: 62px;
             height: 63px;
             left: 35%;
