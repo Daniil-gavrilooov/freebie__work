@@ -1,0 +1,57 @@
+.feedback {
+    padding: 118px 0;
+    background: #fcfdff;
+    &__inner {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        align-items: center;
+    }
+    &__title {
+        font-family: $quicksand;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #3d4f9f;
+        margin-bottom: 18px;
+    }
+    &__text {
+        font-family: $roboto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+        color: #8d96bd;
+        max-width: 330px;
+    }
+
+    &__form-input {
+        font-family: $quicksand;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #7a85ad;
+        padding: 21px 100px 21px 23px;
+        background: #efeff7;
+        border-radius: 5px;
+        margin-right: 14px;
+        &::placeholder {
+            font-family: $quicksand;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 16px;
+            color: #7a85ad;
+        }
+    }
+    &__form-btn {
+        font-family: $quicksand;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #ffffff;
+        padding: 22px 62px;
+        background: #4d6ce1;
+        box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+        border-radius: 5px;
+    }
+}
